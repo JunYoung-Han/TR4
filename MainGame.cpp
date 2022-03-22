@@ -19,6 +19,13 @@ void CMainGame::Initialize(void)
 		m_pPlayer->Initialize();
 	}
 	dynamic_cast<CPlayer*>(m_pPlayer)->SelectJob();
+
+	if (nullptr == m_pInven)
+	{
+		m_pInven = new CInven;
+		m_pInven->Set_Player(m_pPlayer);
+		m_pInven->Initialize();
+	}
 }
 
 void CMainGame::Update(void)
@@ -36,7 +43,7 @@ void CMainGame::Update(void)
 		switch (iInput)
 		{
 		case 1:
-			if(nullptr == m_pField)
+			if (nullptr == m_pField)
 			{
 				m_pField = new CField;
 				m_pField->Initialize();
@@ -44,17 +51,27 @@ void CMainGame::Update(void)
 			}
 			m_pField->Update();
 			break;
-			
+
 		case 2:
+			if (nullptr == m_pStore)
+			{
+				m_pStore = new CStore;
+				m_pStore->Initialize();
+				m_pStore->Set_Player(m_pPlayer);
+				m_pStore->Set_Inven(m_pInven);
+			}
+			m_pStore->Update();
 			break;
-			
+
 		case 3:
+			if (nullptr != m_pInven)
+				m_pInven->Update();
 			break;
-			
+
 		case 4:
 			Save_Data();
 			break;
-			
+
 		case 5:
 			return;
 

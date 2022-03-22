@@ -147,6 +147,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Inven.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Store.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="MainGame.cpp" />
     <ClCompile Include="Monster.cpp" />
@@ -163,11 +166,14 @@
   <ItemGroup>
     <ClInclude Include="Define.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="Inven.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="MainGame.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Obj.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Store.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

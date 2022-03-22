@@ -59,6 +59,15 @@
     <ClCompile Include="Field.cpp">
       <Filter>02. Scene\00. Field</Filter>
     </ClCompile>
+    <ClCompile Include="Store.cpp">
+      <Filter>02. Scene\01. Store</Filter>
+    </ClCompile>
+    <ClCompile Include="Inven.cpp">
+      <Filter>02. Scene\02. Inven</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>01. Obj\02. Item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -81,6 +90,15 @@
     </ClInclude>
     <ClInclude Include="Field.h">
       <Filter>02. Scene\00. Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Store.h">
+      <Filter>02. Scene\01. Store</Filter>
+    </ClInclude>
+    <ClInclude Include="Inven.h">
+      <Filter>02. Scene\02. Inven</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>01. Obj\02. Item</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
